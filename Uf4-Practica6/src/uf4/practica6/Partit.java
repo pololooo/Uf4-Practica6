@@ -21,12 +21,29 @@ public class Partit {
         this.golsEquipVisitant = golsEquipVisitant;
     }
 
-    public static void marcaEquipLocal() {
-
+    public void marcaEquipLocal() {
+        golsEquipLocal++;
     }
 
-    public static void marcaEquipVisitant() {
+    public void marcaEquipVisitant() {
+        golsEquipVisitant++;
+    }
 
+    public void marcador(String equipLocal, String equipVisitant, int golsEquipLocal, int golsEquipVisitant) {
+        System.out.println(equipLocal);
+        System.out.println(golsEquipLocal);
+        System.out.println(equipVisitant);
+        System.out.println(golsEquipVisitant);
+    }
+
+    public void fi(String equipLocal, String equipVisitant) {
+        if (golsEquipLocal > golsEquipVisitant) {
+            System.out.println("El guanyador es: " + equipLocal);
+        } else if (golsEquipLocal < golsEquipVisitant) {
+            System.out.println("El guanyador es: " + equipVisitant);
+        } else {
+            System.out.println("Empat");
+        }
     }
 
     public String getNomEquipLocal() {

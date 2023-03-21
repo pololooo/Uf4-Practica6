@@ -6,8 +6,37 @@ public class Uf4Practica6 {
 
     public static Scanner scan = new Scanner(System.in);
 
+    private static Partit p;
+
     public static void main(String[] args) {
-//dasdas
+        Menu();
     }
 
+    public static void Menu() {
+        int opc;
+
+        System.out.println("PARTIT");
+        System.out.println("1. Començar Partit");
+        System.out.println("0. Sortir");
+        opc = scan.nextInt();
+        scan.nextLine();
+
+        switch (opc) {
+            case 1:
+                ComençarPartit();
+                break;
+            default:
+                System.out.println("Numero incorrecte.");
+                break;
+        }
+    }
+
+    public static void ComençarPartit() {
+        String equipLocal;
+        String equipVisitant;
+        System.out.println("Nom del Equip Local:");
+        equipLocal = scan.nextLine();
+        System.out.println("Nom del Equip Visitant: ");
+        equipVisitant = scan.nextLine();
+    }
 }
