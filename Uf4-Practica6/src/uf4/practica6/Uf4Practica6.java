@@ -9,14 +9,21 @@ public class Uf4Practica6 {
     private static Partit p;
 
     public static void main(String[] args) {
-        Menu();
+        int opc = 0;
+
+        do {
+            opc = Menu();
+        } while (opc != 0);
     }
 
-    public static void Menu() {
+    public static int Menu() {
         int opc;
 
+        System.out.println(" ");
+        System.out.println("----------");
         System.out.println("PARTIT");
         System.out.println("1. Començar Partit");
+        System.out.println("2. Mostrar Resultats");
         System.out.println("0. Sortir");
         opc = scan.nextInt();
         scan.nextLine();
@@ -25,10 +32,13 @@ public class Uf4Practica6 {
             case 1:
                 ComençarPartit();
                 break;
+            case 2: 
+                fi();
             default:
                 System.out.println("Numero incorrecte.");
                 break;
         }
+        return opc;
     }
 
     public static void ComençarPartit() {
