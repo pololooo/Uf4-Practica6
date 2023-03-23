@@ -23,7 +23,9 @@ public class Uf4Practica6 {
         System.out.println("----------");
         System.out.println("PARTIT");
         System.out.println("1. Començar Partit");
-        System.out.println("2. Mostrar Resultats");
+        System.out.println("2. Gol EquipLocal");
+        System.out.println("3. Gol EquipVisitant");
+        System.out.println("4. Mostrar Resultats");
         System.out.println("0. Sortir");
         opc = scan.nextInt();
         scan.nextLine();
@@ -32,7 +34,13 @@ public class Uf4Practica6 {
             case 1:
                 ComençarPartit();
                 break;
-            case 2: 
+            case 2:
+                GolEquipLocal();
+                break;
+            case 3:
+                GolEquipVisitant();
+                break;
+            case 4:
                 fi();
             default:
                 System.out.println("Numero incorrecte.");
@@ -48,5 +56,22 @@ public class Uf4Practica6 {
         equipLocal = scan.nextLine();
         System.out.println("Nom del Equip Visitant: ");
         equipVisitant = scan.nextLine();
+    }
+
+    public static void GolEquipLocal() {
+
+    }
+
+    public static void GolEquipVisitant() {
+
+    }
+
+    public static void fi() {
+        String equipLocal;
+        String equipVisitant;
+        int golsEquipLocal = 0;
+        int golsEquipVisitant = 0;
+        System.out.println(p.getNomEquipLocal() + " amb " + p.getGolsEquipLocal());
+        System.out.println(p.getNomEquipVisitant() + " amb " + p.getGolsEquipVisitant());
     }
 }
