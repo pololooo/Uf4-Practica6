@@ -59,18 +59,14 @@ public class Uf4Practica6 {
     }
 
     public static void GolEquipLocal() {
-
+        p.marcaEquipLocal();
     }
 
     public static void GolEquipVisitant() {
-
+        p.marcaEquipVisitant();
     }
 
     public static void fi() {
-        String equipLocal;
-        String equipVisitant;
-        int golsEquipLocal;
-        int golsEquipVisitant;
         System.out.println(p.getNomEquipLocal() + " amb " + p.getGolsEquipLocal());
         System.out.println(p.getNomEquipVisitant() + " amb " + p.getGolsEquipVisitant());
     }

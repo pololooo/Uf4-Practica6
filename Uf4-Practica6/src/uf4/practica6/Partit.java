@@ -7,6 +7,10 @@ public class Partit {
     private int golsEquipLocal;
     private int golsEquipVisitant;
 
+    public Partit() {
+
+    }
+
     Partit(String equipLocal, String equipVisitant) {
         this.nomEquipLocal = equipLocal;
         this.nomEquipVisitant = equipVisitant;
