@@ -69,8 +69,8 @@ public class Uf4Practica6 {
     public static void fi() {
         String equipLocal;
         String equipVisitant;
-        int golsEquipLocal = 0;
-        int golsEquipVisitant = 0;
+        int golsEquipLocal;
+        int golsEquipVisitant;
         System.out.println(p.getNomEquipLocal() + " amb " + p.getGolsEquipLocal());
         System.out.println(p.getNomEquipVisitant() + " amb " + p.getGolsEquipVisitant());
     }
